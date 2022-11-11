@@ -1,0 +1,24 @@
+body{
+    color: red;
+}
+/* the general */
+body h3{
+    color: black;
+}
+/* this is more specific, the browser will pick black for h3 even though it is under body */
+
+ol{
+    color: aqua;
+}
+/* the general */
+ol #time4{
+    color: blueviolet;
+}
+
+/* this is more specific so the browser will pick blueviolet for the ordered list with the id name time4 */
+ul {
+   color: black;
+   font: 1em sans-serif;
+}
+/* the parent tag for p and li is ul so since i've changed the colour
+ and font of the parent the children also changes*/
